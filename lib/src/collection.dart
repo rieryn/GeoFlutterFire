@@ -114,6 +114,7 @@ class GeoFireCollectionRef {
         final GeoPoint geoPoint = geoPointField['geopoint'];
         distanceDocSnapshot.distance =
             center.distance(lat: geoPoint.latitude, lng: geoPoint.longitude);
+        distanceDocSnapshot.coordinates = geoPoint;
         return distanceDocSnapshot;
       });
 
