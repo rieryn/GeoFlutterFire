@@ -131,7 +131,7 @@ class GeoFireCollectionRef {
         final val = (distA * 1000).toInt() - (distB * 1000).toInt();
         return val;
       });
-      return filteredList.map((element) => element.documentSnapshot).toList();
+      return filteredList;
     });
     return filtered.asBroadcastStream();
   }
